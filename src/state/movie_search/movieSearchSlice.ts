@@ -35,7 +35,7 @@ const movieSearchSlice = createSlice({
 export const getMovieData = createAsyncThunk(
   "movieSearch/getMovieData",
   async (movieTitle: string) => {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=(redacted)=${movieTitle}`)
+    const response = await fetch(`http://www.omdbapi.com/?apikey=dd97e12e&t=${movieTitle}`)
     const returnedMovieData = response.json();
     return returnedMovieData;
   }

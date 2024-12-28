@@ -34,8 +34,7 @@ import { getMovieData } from "../state/movie_search/movieSearchSlice";
           placeholder="enter movie title"
           required
           onChange={handleMovieInputChange}
-          >    
-          </input>
+          />
           <button type="submit">Find Movie Details</button>
         </form>
       </>
